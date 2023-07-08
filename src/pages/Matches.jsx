@@ -51,9 +51,9 @@ export default function Chat({ match }) {
     { id: 6, name: 'Christina', imageUrl: christina },
   ];
 
-  const matchedPerson = people.find(
-    (person) => person.id === Number(matchId) || 2
-  );
+  const matchedPerson = people.find((person) => {
+    return person.id === Number(matchId) - 1;
+  });
 
   const [messages, setMessages] = useState([
     {
