@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import SwipeCards from '@/pages/SwipeCards';
 import { Montserrat } from '@next/font/google';
+import { Web3Button } from '@web3modal/react';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={`${styles.main} ${montserrat.className}`}>
+        <Web3Button />
         Gather
         <SwipeCards />
       </main>
