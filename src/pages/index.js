@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import SwipeCards from '@/pages/SwipeCards';
 import { Web3Button } from '@web3modal/react'
-import { Web3Button } from '@web3modal/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
