@@ -26,8 +26,6 @@ function SwipeCardComponent({ person, onSwipe }) {
     transform: `translate3d(${value}px, 0, 0) rotate(${value * 0.05}deg)`,
   }));
 
-  console.log(style, 'style');
-
   function handleYesClick() {
     onSwipe(person, 1);
   }

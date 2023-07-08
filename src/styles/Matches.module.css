@@ -1,0 +1,98 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.messageRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.messageUser {
+  justify-content: flex-end;
+}
+
+.messageUser .messageContent {
+  background-color: rgba(218, 115, 201, 0.8);
+  color: white;
+  align-self: flex-end;
+}
+
+.messageBot .messageContent {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.messageContent {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 80%;
+  white-space: pre-line;
+}
+
+.messageTimestamp {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #aaa;
+}
+
+.chatInputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-family: inherit;
+}
+
+.chatButton {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(218, 115, 201, 0.8);
+  color: white;
+  cursor: pointer;
+}
+.confirmButton {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(218, 115, 201, 0.8);
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+/* .countdownImage {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+} */

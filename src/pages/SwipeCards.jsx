@@ -4,6 +4,7 @@ import ethan from '../assets/ethan.jpg';
 import christina from '../assets/christina.jpg';
 import Modal from 'react-modal';
 import styles from '../styles/SwipeCards.module.css';
+import Link from 'next/link';
 
 export default function SwipeCardPage() {
   const [people, setPeople] = useState([
@@ -11,6 +12,8 @@ export default function SwipeCardPage() {
       id: 1,
       name: 'Alice',
       imageUrl: christina,
+      interests: [],
+      hobbies: [],
     },
     { id: 2, name: 'Bob', imageUrl: ethan },
     { id: 3, name: 'Jane', imageUrl: christina },
@@ -41,7 +44,7 @@ export default function SwipeCardPage() {
   }
 
   function closeMatchModal() {
-    setMatchModalOpen(false);
+    // setMatchModalOpen(false);
   }
 
   return (
@@ -52,8 +55,17 @@ export default function SwipeCardPage() {
           <SwipeCard key={person.id} person={person} onSwipe={handleSwipe} />
         ))}
       <Modal isOpen={isMatchModalOpen} onRequestClose={closeMatchModal}>
-        <h2>Congratulations, you matched!</h2>
-        <button onClick={closeMatchModal}>Go to conversation</button>
+        <h2 className={styles.header}>Congratulations, you matched!</h2>
+        <Link
+          href={{
+            pathname: '/Matches',
+            query: { matchId: people[currentPersonIndex].id },
+          }}
+          onClick={closeMatchModal}
+          className={styles.convoButton}
+        >
+          Go to conversation
+        </Link>
       </Modal>
     </div>
   );
