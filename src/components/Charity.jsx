@@ -18,18 +18,18 @@ function Charity() {
     fetchOrgs();
   }, []);
 
-  const { config } = usePrepareSendTransaction({
-    request: {
-      to: swapAndDonateTransaction,
-      data: swapAndDonateTransaction,
-      value: swapAndDonateTransaction,
-      gasLimit: 1_000_000,
-    },
-    enabled: !!swapAndDonateTransaction,
-    onError: (error) => console.error(error),
-  });
+  // const { config } = usePrepareSendTransaction({
+  //   request: {
+  //     to: swapAndDonateTransaction,
+  //     data: swapAndDonateTransaction,
+  //     value: swapAndDonateTransaction,
+  //     gasLimit: 1_000_000,
+  //   },
+  //   enabled: !!swapAndDonateTransaction,
+  //   onError: (error) => console.error(error),
+  // });
 
-  const { sendTransaction } = useSendTransaction(configPrepareTxSwapAndDonate);
+  // const { sendTransaction } = useSendTransaction(configPrepareTxSwapAndDonate);
 
   const handleDonation = async () => {
     const apiConfig = new Configuration({ network: "goerli" });
