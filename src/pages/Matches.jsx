@@ -175,6 +175,7 @@ export default function Chat({ match }) {
       role: 'system',
       content: `Given that the user enjoys ${userInterests}, suggest some interesting activities or places to go for a date in Barcelona. Keep the response to 250 characters.`,
     };
+
     const apiRequestBodySuggestions = {
       model: 'gpt-3.5-turbo',
       max_tokens: 100,
