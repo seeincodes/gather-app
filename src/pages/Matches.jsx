@@ -5,6 +5,7 @@ import styles from '../styles/Matches.module.css';
 import ethan from '../assets/ethan.jpg';
 import christina from '../assets/christina.jpg';
 import { useRouter } from 'next/router';
+import { stakeXDC } from '../components/Staking';
 
 const API_KEY = process.env.NEXT_PUBLIC_OPENAI_KEY;
 
@@ -207,8 +208,14 @@ export default function Chat({ match }) {
       });
   };
 
-  const stake = () => {
-    alert('you have staked');
+  const stake = async () => {
+    try {
+      await stakeXDC();
+      alert('You have staked');
+    } catch (err) {
+      console.error(err);
+      alert('An error occurred while staking');
+    }
   };
 
   return (
