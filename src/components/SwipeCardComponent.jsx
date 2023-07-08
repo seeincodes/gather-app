@@ -39,6 +39,18 @@ function SwipeCardComponent({ person, onSwipe }) {
       <animated.div {...bind()} style={style} className={styles.swipeCard}>
         <Image src={person.imageUrl} alt={person.name} />
         <h2>{person.name}</h2>
+        <div className={styles.bubbleContainer}>
+          {person.interests.map((interest, index) => (
+            <div key={index} className={styles.bubble}>
+              {interest}
+            </div>
+          ))}
+          {person.hobbies.map((hobby, index) => (
+            <div key={index} className={styles.bubble}>
+              {hobby}
+            </div>
+          ))}
+        </div>
       </animated.div>
       <div className={styles.buttons}>
         <button onClick={handleNoClick} className={styles.button}>

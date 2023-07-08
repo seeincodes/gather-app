@@ -1,6 +1,6 @@
 import Countdown from '../components/CountdownTimer';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Matches.module.css';
 import ethan from '../assets/ethan.jpg';
 import christina from '../assets/christina.jpg';
@@ -17,39 +17,50 @@ export default function Chat({ match }) {
   const router = useRouter();
   const { matchId } = router.query;
 
-  const people = [
+  const [people, setPeople] = useState([
     {
       id: 1,
       name: 'Alice',
       imageUrl: christina,
-      interests: [],
-      hobbies: [],
-      matchTime: Math.floor(Date.now() / 1000),
+      interests: ['Cooking', 'Traveling', 'Hiking'],
+      hobbies: ['Photography', 'Writing', 'Reading'],
     },
     {
       id: 2,
       name: 'Bob',
       imageUrl: ethan,
-      matchTime: Math.floor(Date.now() / 1000),
+      interests: ['Gaming', 'Coding', 'Music'],
+      hobbies: ['Skiing', 'Running', 'Cooking'],
     },
     {
       id: 3,
       name: 'Jane',
       imageUrl: christina,
-      matchTime: Math.floor(Date.now() / 1000),
+      interests: ['Baking', 'Gardening', 'Fitness'],
+      hobbies: ['Yoga', 'Swimming', 'Hiking'],
     },
     {
       id: 4,
       name: 'Jon',
       imageUrl: ethan,
+      interests: ['Soccer', 'Technology', 'Investing'],
+      hobbies: ['Guitar', 'Cycling', 'Woodworking'],
     },
     {
       id: 5,
       name: 'Ethan',
       imageUrl: ethan,
+      interests: ['AI', 'Space', 'Reading'],
+      hobbies: ['Chess', 'Rock Climbing', 'Cooking'],
     },
-    { id: 6, name: 'Christina', imageUrl: christina },
-  ];
+    {
+      id: 6,
+      name: 'Christina',
+      imageUrl: christina,
+      interests: ['Fashion', 'Art', 'Music'],
+      hobbies: ['Dance', 'Painting', 'Traveling'],
+    },
+  ]);
 
   let matchedPerson = people.find((person) => {
     return person.id === Number(matchId) - 1;
@@ -60,7 +71,8 @@ export default function Chat({ match }) {
       id: 3,
       name: 'Jane',
       imageUrl: christina,
-      matchTime: Math.floor(Date.now() / 1000),
+      interests: ['Baking', 'Gardening', 'Fitness'],
+      hobbies: ['Yoga', 'Swimming', 'Hiking'],
     };
   }
 
@@ -149,6 +161,14 @@ export default function Chat({ match }) {
   }
 
   const [userInterests, setUserInterests] = useState('nature and art');
+
+  useEffect(() => {
+    const interestsAndHobbies = [
+      ...matchedPerson.interests,
+      ...matchedPerson.hobbies,
+    ].join(', ');
+    setUserInterests(interestsAndHobbies);
+  }, [matchedPerson]);
 
   const fetchActivitySuggestions = async () => {
     const systemMessage = {
