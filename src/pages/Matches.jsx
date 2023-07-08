@@ -242,7 +242,7 @@ export default function Chat({ match }) {
         {suggestions}
         {suggestions && (
           <button onClick={stake} className={styles.confirmButton}>
-            Confirm attendance
+            Confirm attendance for tomorrow at 9pm
           </button>
         )}
         <button
