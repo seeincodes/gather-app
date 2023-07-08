@@ -7,8 +7,27 @@
   background: #f0f0f0;
   padding: 30px;
   border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nextCard {
   z-index: -1;
+}
+
+.modalContainer {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.convoButton {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(218, 115, 201, 0.8);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
 }
