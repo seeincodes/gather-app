@@ -7,7 +7,7 @@
   background: #f0f0f0;
   padding: 30px;
   border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
 }
 
 .nextCard {
@@ -15,11 +15,12 @@
 }
 
 .modalContainer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
 }
 
 .header {
   margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .convoButton {
@@ -30,4 +31,5 @@
   color: white;
   cursor: pointer;
   margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
