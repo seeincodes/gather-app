@@ -51,10 +51,18 @@ export default function Chat({ match }) {
     { id: 6, name: 'Christina', imageUrl: christina },
   ];
 
-  const matchedPerson = people.find((person) => {
-    const chosenMatch = Number(matchId) - 1;
-    return person.id === chosenMatch;
+  let matchedPerson = people.find((person) => {
+    return person.id === Number(matchId) - 1;
   });
+
+  if (!matchedPerson) {
+    matchedPerson = {
+      id: 3,
+      name: 'Jane',
+      imageUrl: christina,
+      matchTime: Math.floor(Date.now() / 1000),
+    };
+  }
 
   const [messages, setMessages] = useState([
     {
