@@ -39,7 +39,7 @@ function SwipeCardComponent({ person, onSwipe }) {
   return (
     <div className={styles.swipeCardContainer}>
       <animated.div {...bind()} style={style} className={styles.swipeCard}>
-        <Image src={person.imageUrl} alt={person.name} />
+        <img src={person.imageUrl} alt={person.name} />
         <h2>{person.name}</h2>
       </animated.div>
       <div className={styles.buttons}>
