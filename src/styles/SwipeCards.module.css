@@ -1,0 +1,14 @@
+.swipeComponent {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.nextCard {
+  z-index: -1;
+}
