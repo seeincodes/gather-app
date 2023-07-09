@@ -4,7 +4,7 @@
 
 Gather is a dating or friendship app designed to combat the prevalent issues of ghosting and endless chatting that often hinder true connections in the digital dating sphere. Our platform emphasizes real, face-to-face meetings and minimizes online chatter, bringing dating back to its most meaningful form.
 
-Gather tackles the problem of online dating inertia by implementing a 48-hour limit for online interaction. Once matched, users focus on making real plans, not endless small talk. We facilitate the planning process by sending tailored suggestions for meeting places and activities based on users' locations and sharPed interests.
+Gather tackles the problem of online dating inertia by implementing a 48-hour limit for online interaction. Once matched, users focus on making real plans, not endless small talk. We facilitate the planning process by sending tailored suggestions for meeting places and activities based on users' locations and shared interests.
 
 To foster accountability, users stake crypto to confirm their meet-ups. If both parties attend, their crypto is returned. However, if a user fails to show up, their staked crypto is forfeited to a community pool and eventually donated to charity. This unique approach not only encourages commitment but also makes a positive impact by channeling funds towards charitable causes.
 
