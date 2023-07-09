@@ -4,7 +4,7 @@
 
 Gather is a dating or friendship app designed to combat the prevalent issues of ghosting and endless chatting that often hinder true connections in the digital dating sphere. Our platform emphasizes real, face-to-face meetings and minimizes online chatter, bringing dating back to its most meaningful form.
 
-Gather tackles the problem of online dating inertia by implementing a 48-hour limit for online interaction. Once matched, users focus on making real plans, not endless small talk. We facilitate the planning process by sending tailored suggestions for meeting places and activities based on users' locations and shared interests.
+Gather tackles the problem of online dating inertia by implementing a 48-hour limit for online interaction. Once matched, users focus on making real plans, not endless small talk. We facilitate the planning process by sending tailored suggestions for meeting places and activities based on users' locations and sharPed interests.
 
 To foster accountability, users stake crypto to confirm their meet-ups. If both parties attend, their crypto is returned. However, if a user fails to show up, their staked crypto is forfeited to a community pool and eventually donated to charity. This unique approach not only encourages commitment but also makes a positive impact by channeling funds towards charitable causes.
 
@@ -32,7 +32,7 @@ MEET token contract address: 0xCa44fe9BA1722abBf9855856866487146704E78e. More ab
 
 We've deployed our staking contract on Scroll Network. Scroll offers low transaction fees and high-speed operations, crucial for a smooth and user-friendly staking experience. In addition, Scroll's advanced security features guarantee that every transaction is protected.
 
-You can view the contract deployment on our [Staking Contracts](https://github.com/seeinplays/gather-app/blob/main/contracts/staking/contracts/staking) GitHub page. Contract address: 0x80AC75B0050BAc44C11199954EE5bc3B52CF65b9
+You can view the contract deployment on our [Staking Contracts](https://github.com/seeinplays/gather-app/blob/main/contracts/staking/contracts/staking) GitHub page. Contract address: 0xbA2cc8659Fc49B73ED4a7D396d1428a7bC2F66C9
 
 ## AI Matchmaking
 
