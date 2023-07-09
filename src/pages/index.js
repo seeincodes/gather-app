@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${montserrat.className}`}>
         <Web3Button />
-        Gather
         <SwipeCards />
       </main>
     </>

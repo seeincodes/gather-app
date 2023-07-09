@@ -37,6 +37,7 @@ export default async function stakeXDC() {
     stakingContractAddress,
     stakeAmount
   );
+
   await approveTx.wait();
 
   let stakeTx = await stakingContract.stake(stakeAmount);
